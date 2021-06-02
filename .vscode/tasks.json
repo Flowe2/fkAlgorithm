@@ -8,13 +8,13 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${workspaceFolder}/output/${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ], // 编译命令参数
             "problemMatcher": {
                 "owner": "cpp",
                 "fileLocation": [
                     "relative",
-                    "${workspaceFolder}"
+                    "${fileDirname}"
                 ],
                 "pattern": {
                     "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
