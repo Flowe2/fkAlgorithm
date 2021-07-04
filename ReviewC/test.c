@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int test(int a, int b)
-{
-    return (a > b) - (a < b);
-}
-
 int main()
 {
-    printf("%d\n", test(1, 2));
-    printf("%d\n", test(1, 1));
-    printf("%d\n", test(1, 0));
+    int b[3] = {1, 2, 3}, *x, *y, *z;
+    x = b;
+    z = b+2;
+    y = x + (z - x)/2;
+    printf("%d, %d, %d\n", x, y, z);
+    printf("%d, %d, %d\n", *x, *y, *z);
 
     return 0;
 }
