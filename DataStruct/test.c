@@ -1,13 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+typedef struct LinkNode
+{
+   int data;
+   struct LinkNode *next;
+} QueueLink;
+
+typedef struct
+{
+   QueueLink *front, *rear;
+} Queue;
+
+void initQueue(Queue *q)
+{
+   q->front = (QueueLink *)malloc(sizeof(QueueLink));
+   q->rear = (QueueLink *)malloc(sizeof(QueueLink));
+   q->front->next = NULL;
+}
 
 int main()
 {
-   printf("%d\n", sizeof(int));
-   printf("%d\n", sizeof(short));
-   printf("%d\n", sizeof(long));
-   printf("%d\n", sizeof(long long));
-   printf("%d\n", sizeof(float));
-   printf("%d\n", sizeof(double));
+   Queue q;
+   initQueue(&q);
 
+   system("pause");
    return 0;
 }

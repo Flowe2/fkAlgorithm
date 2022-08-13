@@ -1,14 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define Maxsize 20
+#define true 1
+#define false 0
+
+typedef struct
+{
+    int Data[Maxsize];
+    int top;
+}bracketStack;
+
+int pop(bracketStack &L, int res){
+
+}
+
 int main()
 {
-    int b[3] = {1, 2, 3}, *x, *y, *z;
-    x = b;
-    z = b+2;
-    y = x + (z - x)/2;
-    printf("%d, %d, %d\n", x, y, z);
-    printf("%d, %d, %d\n", *x, *y, *z);
+    int n;
+    n = getchar();
+
+    
+
+    system("pause");
 
     return 0;
 }
