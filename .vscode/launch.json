@@ -42,6 +42,7 @@
             },
             "preLaunchTask": "",
             "sourceMaps": false,
+            "console": "internalConsole"
         }
     ],
 }
